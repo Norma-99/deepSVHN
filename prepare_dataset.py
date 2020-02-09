@@ -40,5 +40,5 @@ if __name__ == '__main__':
         train_samples=TRAIN_SAMPLES,
         test_samples=TEST_SAMPLES
     )
-    with open(os.path.join('datasets', filename)) as f:
+    with open(os.path.join('datasets', filename), 'wb') as f:
         pickle.dump(save_target, f)
