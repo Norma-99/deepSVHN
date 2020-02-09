@@ -36,7 +36,7 @@ if __name__ == '__main__':
     save_target = (x_train, y_train), (x_test, y_test)
 
     # Pickle it to a file
-    filename = 'dataset_train{train_samples}_test{test_samples}.ds'.format(
+    filename = 'dataset_train{train_samples}_test{test_samples}.pickle'.format(
         train_samples=TRAIN_SAMPLES,
         test_samples=TEST_SAMPLES
     )
