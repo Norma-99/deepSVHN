@@ -41,4 +41,4 @@ if __name__ == '__main__':
         test_samples=TEST_SAMPLES
     )
     with open(os.path.join('datasets', filename), 'wb') as f:
-        pickle.dump(save_target, f)a
+        pickle.dump(save_target, f)

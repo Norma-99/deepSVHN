@@ -5,7 +5,7 @@ from datetime import datetime
 
 DATASET_PATH = 'datasets/dataset_train70000_test10000.pickle'
 LEARNING_RATE = 0.1
-EPOCHS = 100
+EPOCHS = 20
 
 
 (x_train, y_train), (x_test, y_test) = pickle.load(open(DATASET_PATH, 'rb'))
@@ -19,7 +19,7 @@ model = tf.keras.Sequential([
     tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(10, activation='softmax')])
-])
+
 
 optimizer = tf.keras.optimizers.SGD(LEARNING_RATE)
 model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=['accuracy'])
