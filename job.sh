@@ -8,4 +8,5 @@
 
 PYTHON="/scratch/nas/4/norma/venv/bin/python"
 
+$PYTHON prepare_dataset.py
 $PYTHON experiments/experiment1_svhn_mpl.py
