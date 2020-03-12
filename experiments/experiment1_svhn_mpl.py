@@ -28,3 +28,4 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_path)
 
 model.fit(x_train, y_train, epochs=EPOCHS, validation_data=(x_test, y_test), 
             callbacks=[tensorboard_callback])
+
