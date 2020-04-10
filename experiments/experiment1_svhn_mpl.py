@@ -11,6 +11,7 @@ EPOCHS = 100
 (x_train, y_train), (x_test, y_test) = pickle.load(open(DATASET_PATH, 'rb'))
 
 model = tf.keras.Sequential([
+    tf.keras.layers.GaussianNoise(0.01, input_shape=(32, 32, 3)),
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(1024, activation='relu'),
     tf.keras.layers.Dense(256, activation='relu'),
